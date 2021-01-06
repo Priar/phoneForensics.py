@@ -1,51 +1,54 @@
-# Ignore list for Eagle, a PCB layout tool
+#!/usr/bin/python3
+import webbrowser
 
-# Backup files
-*.s#?
-*.b#?
-*.l#?
-*.b$?
-*.s$?
-*.l$?
+areaCode = input("What is the area code of the phone number? ")
+middle3 = input("What are the middle 3 digits? ")
+last4 = input("What are the last 4 digits? ")
 
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
+phoneNumber = str(areaCode) + str(middle3) + str(last4)
 
-# Autorouter files
-*.pro
-*.job
+fourOneOne = "https://www.411.com/phone/" + "1-" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(fourOneOne)
 
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
+spyTox = "https://www.spytox.com/people/search?phone=" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(spyTox)
 
-*.dri
-*.drl
-*.gpi
-*.pls
-*.ger
-*.xln
+fastPeopleSearch = "https://www.fastpeoplesearch.com/" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(fastPeopleSearch)
 
-*.drd
-*.drd.*
+truePeopleSearch = "https://www.truepeoplesearch.com/results?phoneno=" + "(" + str(areaCode) + ")" + str(middle3) + "-" + str(last4)
+webbrowser.open(truePeopleSearch)
 
-*.s#*
-*.b#*
+phoneLookUp = "https://www.phonelookup.com/" + "1/" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(phoneLookUp)
 
-*.info
+usPhoneBook = "https://www.usphonebook.com/" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(usPhoneBook)
 
-*.eps
+thatsThem = "https://thatsthem.com/phone/" + str(areaCode) + "-" + str(middle3) + "-" + str(last4)
+webbrowser.open(thatsThem)
 
-# file locks introduced since 7.x
-*.lck
+syncMe = "https://sync.me/search/?number=1" + phoneNumber
+webbrowser.open(syncMe)
+
+whoCallsMe = "https://whocallsme.com/Phone-Number.aspx/" + phoneNumber
+webbrowser.open(whoCallsMe)
+
+zabaSearch = "https://www.zabasearch.com/phone/" + phoneNumber
+webbrowser.open(zabaSearch)
+
+peopleFinders = "https://www.peoplefinders.com/reverse-phone/searchresults?showAnimatedLoadingBar=true&search=Phone&phone=" + phoneNumber
+webbrowser.open(peopleFinders)
+
+okCaller = "https://www.okcaller.com/detail.php?number=" + phoneNumber
+webbrowser.open(okCaller)
+
+searchBug = "https://www.searchbug.com/tools/reverse-phone-lookup.aspx?TYPE=phonerev&TAG=tools&FULLPHONE=" + phoneNumber
+webbrowser.open(searchBug)
+
+yellowPages = "https://people.yellowpages.com/whitepages/phone-lookup?phone=" + phoneNumber
+webbrowser.open(yellowPages)
+
+
+
+print("was composed by Kebane & Themba; the Maitse's !")
