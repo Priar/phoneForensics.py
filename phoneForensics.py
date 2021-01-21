@@ -31,6 +31,9 @@ webbrowser.open(thatsThem)
 syncMe = "https://sync.me/search/?number=1" + phoneNumber
 webbrowser.open(syncMe)
 
+yellowpages= "https://www.yellowpages.co.za/?number-1" + phoneNumber
+  webbrowser.open(search)
+
 whoCallsMe = "https://whocallsme.com/Phone-Number.aspx/" + phoneNumber
 webbrowser.open(whoCallsMe)
 
